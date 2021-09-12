@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">
+background-color: rgb(247, 251, 252);</string>
+   </property>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1000</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:None;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="stegano">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>37</y>
+       <width>111</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">letter-spacing:4px;
+color: rgb(29, 61, 86);</string>
+     </property>
+     <property name="text">
+      <string>STEGAN</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="icon">
+     <property name="geometry">
+      <rect>
+       <x>151</x>
+       <y>41</y>
+       <width>24</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/img/img/tabler-icon-search (1).svg);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="decode">
+     <property name="geometry">
+      <rect>
+       <x>876</x>
+       <y>41</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Open Sans Semibold</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover {
+color: #1d3d56;
+}
+QPushButton{
+letter-spacing:3.2px;
+background:None;
+border:None;
+color:#111747;
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Decode</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="encode">
+     <property name="geometry">
+      <rect>
+       <x>719</x>
+       <y>40</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Open Sans Semibold</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover {
+color: #1d3d56;
+}
+QPushButton{
+letter-spacing:3.2px;
+background:None;
+border:None;
+color:#111747;
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Encode</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="home">
+     <property name="geometry">
+      <rect>
+       <x>557</x>
+       <y>40</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Open Sans Semibold</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover {
+color: #1d3d56;
+}
+QPushButton{
+letter-spacing:3.2px;
+background:None;
+border:None;
+color:#111747;
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Home</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>1000</width>
+      <height>520</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="home_page">
+     <widget class="QLabel" name="pattern">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>0</y>
+        <width>720</width>
+        <height>520</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/img/img/pattern1.svg);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="T1">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>58</y>
+        <width>441</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans Semibold</family>
+        <pointsize>24</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">line-height:1.2px;
+color:#06818E;
+letter-spacing:6.4px;</string>
+      </property>
+      <property name="text">
+       <string>BRING YOUR</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="T2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>112</y>
+        <width>441</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans Semibold</family>
+        <pointsize>24</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">line-height:1.2px;
+color:#06818E;
+letter-spacing:6.4px;
+background:None;</string>
+      </property>
+      <property name="text">
+       <string>MESSAGES</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="T3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>164</y>
+        <width>441</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans Semibold</family>
+        <pointsize>24</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">line-height:1.2px;
+color:#06818E;
+letter-spacing:6.4px;
+background:None;</string>
+      </property>
+      <property name="text">
+       <string>TO THE NEXT LEVEL</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b1">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>244</y>
+        <width>312</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">letter-spacing:2.4px;
+color:#111747;</string>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="text">
+       <string>Hide your message inside an</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+      <property name="buddy">
+       <cstring></cstring>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>273</y>
+        <width>312</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">letter-spacing:2.4px;
+color:#111747;</string>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="text">
+       <string>image by using the power of</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+      <property name="buddy">
+       <cstring></cstring>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b4">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>331</y>
+        <width>312</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">letter-spacing:2.4px;
+color:#111747;</string>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="text">
+       <string>crush, your best friend … or</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+      <property name="buddy">
+       <cstring></cstring>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b5">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>360</y>
+        <width>312</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">letter-spacing:2.4px;
+color:#111747;</string>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="text">
+       <string>Hide your message inside an</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+      <property name="buddy">
+       <cstring></cstring>
+      </property>
+     </widget>
+     <widget class="QFrame" name="b3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>302</y>
+        <width>312</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:None;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="b31">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>151</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans Semibold</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">letter-spacing:2.4px;
+color:#16A3B2;</string>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string>steganography</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="openExternalLinks">
+        <bool>false</bool>
+       </property>
+       <property name="buddy">
+        <cstring></cstring>
+       </property>
+      </widget>
+      <widget class="QLabel" name="b32">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>0</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">letter-spacing:2.4px;
+color:#111747;</string>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string>. Send it to your</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="openExternalLinks">
+        <bool>false</bool>
+       </property>
+       <property name="buddy">
+        <cstring></cstring>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="b6">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>389</y>
+        <width>312</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="b61">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">letter-spacing:2.4px;
+color:#111747;</string>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string>maybe, your</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="openExternalLinks">
+        <bool>false</bool>
+       </property>
+       <property name="buddy">
+        <cstring></cstring>
+       </property>
+      </widget>
+      <widget class="QLabel" name="b62">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>0</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans Semibold</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">letter-spacing:2.4px;
+color:#16A3B2;</string>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string>secret agent</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="openExternalLinks">
+        <bool>false</bool>
+       </property>
+       <property name="buddy">
+        <cstring></cstring>
+       </property>
+      </widget>
+      <widget class="QLabel" name="b63">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>0</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">letter-spacing:2.4px;
+color:#111747;</string>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string>!!!</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="openExternalLinks">
+        <bool>false</bool>
+       </property>
+       <property name="buddy">
+        <cstring></cstring>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>460</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/img/img/info.svg);
+border:0px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="encode_page">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/img/img/pattern2.svg);</string>
+     </property>
+     <widget class="QTextEdit" name="msg_input">
+      <property name="geometry">
+       <rect>
+        <x>146</x>
+        <y>54</y>
+        <width>369</width>
+        <height>370</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgba(255,255,255,0.7);
+border: 5px solid rgba(246,174,156,1);
+border-radius:15px;
+color:#111747;
+letter-spacing:1.5px;
+padding:5px;</string>
+      </property>
+      <property name="markdown">
+       <string/>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Open Sans'; font-size:10pt; font-weight:400; font-style:normal; letter-spacing:1.5px;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Write something here ;)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="choose_img">
+      <property name="geometry">
+       <rect>
+        <x>575</x>
+        <y>66</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#111747;
+letter-spacing:0.7px;</string>
+      </property>
+      <property name="text">
+       <string>Choose an image .</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="choose_folder">
+      <property name="geometry">
+       <rect>
+        <x>575</x>
+        <y>166</y>
+        <width>291</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#111747;
+letter-spacing:0.7px;</string>
+      </property>
+      <property name="text">
+       <string>Change the output folder .</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="img_icon">
+      <property name="geometry">
+       <rect>
+        <x>575</x>
+        <y>96</y>
+        <width>24</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/img/img/image.svg);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="folder_icon">
+      <property name="geometry">
+       <rect>
+        <x>575</x>
+        <y>196</y>
+        <width>24</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/img/img/folder.svg);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="browse1">
+      <property name="geometry">
+       <rect>
+        <x>851</x>
+        <y>91</y>
+        <width>99</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans Semibold</family>
+        <pointsize>9</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:#16A3B2;
+border:1px solid #16A3B2;
+border-radius:14.4px;
+letter-spacing:1.2px;
+background:None;
+}
+QPushButton:hover{
+color:#F7FBFC;
+background:#16A3B2;
+border:None;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Browse</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="change">
+      <property name="geometry">
+       <rect>
+        <x>851</x>
+        <y>191</y>
+        <width>99</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans Semibold</family>
+        <pointsize>9</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:#16A3B2;
+border:1px solid #16A3B2;
+border-radius:14.4px;
+letter-spacing:1.2px;
+background:None;
+}
+QPushButton:hover{
+color:#F7FBFC;
+background:#16A3B2;
+border:None;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Change</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hide">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>320</y>
+        <width>234</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans Semibold</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:#f7fbfc;
+background:#F6AE9F;
+border-radius:22px;
+letter-spacing:1.6px;
+
+}
+QPushButton:hover{
+border:None;
+color:#F6AE9F;
+border:2px solid #F6AE9F;
+background:rgba(246,174,156,0.1);
+}
+QPushButton:pressed{
+color:#f7fbfc;
+background:#F6AE9F;
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Hide the message</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="browse_line">
+      <property name="geometry">
+       <rect>
+        <x>605</x>
+        <y>98</y>
+        <width>231</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:#f7fbfc;
+border: None;
+color:rgba(17,23,71,0.5);
+letter-spacing:1.5px;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="folder_line">
+      <property name="geometry">
+       <rect>
+        <x>605</x>
+        <y>198</y>
+        <width>231</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:#f7fbfc;
+border: None;
+color:rgba(17,23,71,0.5);
+letter-spacing:1.5px;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="decode_page">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/img/img/pattern3.svg);</string>
+     </property>
+     <widget class="QTextEdit" name="msg_output">
+      <property name="geometry">
+       <rect>
+        <x>574</x>
+        <y>54</y>
+        <width>369</width>
+        <height>370</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgba(255,255,255,0.7);
+border: 5px solid rgba(246,174,156,1);
+border-radius:15px;
+color:#111747;
+letter-spacing:1px;
+padding:5px;</string>
+      </property>
+      <property name="markdown">
+       <string/>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Open Sans'; font-size:10pt; font-weight:400; font-style:normal; letter-spacing:1px;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="placeholderText">
+       <string>You can see the hidden code here.</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="browse2">
+      <property name="geometry">
+       <rect>
+        <x>427</x>
+        <y>94</y>
+        <width>99</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans Semibold</family>
+        <pointsize>9</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:#16A3B2;
+border:1px solid #16A3B2;
+border-radius:14.4px;
+letter-spacing:1.2px;
+background:None;
+}
+QPushButton:hover{
+color:#F7FBFC;
+background:#16A3B2;
+border:None;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Browse</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="choose_img2">
+      <property name="geometry">
+       <rect>
+        <x>151</x>
+        <y>54</y>
+        <width>311</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#111747;
+letter-spacing:0.7px;</string>
+      </property>
+      <property name="text">
+       <string>Choose the image you want to decode . </string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="img_icon2">
+      <property name="geometry">
+       <rect>
+        <x>151</x>
+        <y>99</y>
+        <width>24</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/img/img/image.svg);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="browse_line2">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>100</y>
+        <width>231</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:#f7fbfc;
+border: None;
+color:rgba(17,23,71,0.5);
+letter-spacing:1.5px;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="IMG.qrc"/>
+ </resources>
+ <connections/>
+</ui>

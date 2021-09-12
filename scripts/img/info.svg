@@ -1,0 +1,10 @@
+<svg id="info" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Layer_2" data-name="Layer 2">
+    <path id="Tracé_7" data-name="Tracé 7" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12ZM16,10Z" fill="#16a3b2"/>
+    <path id="Tracé_8" data-name="Tracé 8" d="M16,29A13,13,0,1,1,29,16,13,13,0,0,1,16,29ZM16,5A11,11,0,1,0,27,16,11,11,0,0,0,16,5Z" fill="#16a3b2"/>
+    <path id="Tracé_9" data-name="Tracé 9" d="M16,24a2,2,0,0,1-2-2V16a2,2,0,0,1,4,0v6A2,2,0,0,1,16,24Zm0-8Z" fill="#16a3b2"/>
+  </g>
+  <g id="frame">
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="32" height="32" fill="none"/>
+  </g>
+</svg>
