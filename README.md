@@ -22,17 +22,17 @@ if you want to run the source code avaible in this repository , make sure you ha
 
 ##the user interface
 
-The ui is made in Adobe Xd ![xd logo](readme_img/xd.png)
+The ui is made in Adobe Xd 
 
 ## global view
 
 After installing **stegano_setup.exe** , if you run the .exe file , this window will appear showing you the home page:
 
-![home page](readme_img/home.png)
+![home page](readme_img/home.PNG)
 
 In the navbar , you can access the encode page :
 
-![encode page](readme_img/encode.png)
+![encode page](readme_img/encode.PNG)
 
 **The steps are easy:**
 
@@ -44,7 +44,7 @@ In the navbar , you can access the encode page :
 After sending the encoded image to another computer or maybe yours , you can decode it by accessing the encode page :
 **Note: the receiver must have the stegano-app **
 
-![decode page](readme_img/decode.png)
+![decode page](readme_img/decode.PNG)
 
 find the the sent image in your computer, and you're done .
 
