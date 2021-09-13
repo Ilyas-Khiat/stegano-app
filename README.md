@@ -1,7 +1,7 @@
 # STEGANO APP
 
-this is a desktop application that allows you to hide a message inside an image and decode it.
-it's based on what we called [steganography](https://en.wikipedia.org/wiki/Steganography)
+This is a desktop application that allows you to hide a message inside an image and decode it.
+It's based on what we called [steganography](https://en.wikipedia.org/wiki/Steganography)
 
 **You can download the executable file [here](https://drive.google.com/drive/folders/1Jth5vjjfRfK3MM6LQDjcp4OAo4ATaJmh?usp=sharing)**
 
@@ -20,11 +20,11 @@ if you want to run the source code avaible in this repository , make sure you ha
 * pyqt5-tools `pip install pyqt5-tools`
 * numpy
 
-##the user interface
+## The user interface
 
 The ui is made in Adobe Xd 
 
-## global view
+## Global view
 
 After installing **stegano_setup.exe** , if you run the .exe file , this window will appear showing you the home page:
 
@@ -39,9 +39,10 @@ In the navbar , you can access the encode page :
 1. Write the message you want to hide
 2. Choose the image you want. It will contains the hidden message *(it's preferable to choose a png image)*
 3. Change the output folder where the encoded image will be created 
-4.click the button *Hide the message** , an image with the name *[original image name]-embedding.png* is now ready to be sent to someone else
+4. Click the button *Hide the message** , an image with the name *[original image name]-embedding.png* is now ready to be sent to someone else
 
 After sending the encoded image to another computer or maybe yours , you can decode it by accessing the encode page :
+
 **Note: the receiver must have the stegano-app **
 
 ![decode page](readme_img/decode.PNG)
@@ -61,7 +62,7 @@ I guess it's well explained
 
 ## Front-end
 
-check the [app.py](https://github.com/Ilyas-Khiat/stegano-app/blob/main/scripts/app.py) file
+Check the [app.py](https://github.com/Ilyas-Khiat/stegano-app/blob/main/scripts/app.py) file
 
 Contact me here : *kiatdotblend@gmail.com*
 
