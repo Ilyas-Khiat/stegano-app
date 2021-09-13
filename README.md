@@ -47,7 +47,7 @@ After sending the encoded image to another computer or maybe yours , you can dec
 
 ![decode page](readme_img/decode.PNG)
 
-find the the sent image in your computer, and you're done .
+Find the sent image in your computer, and you're done .
 
 **Magic**
 
