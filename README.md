@@ -39,11 +39,11 @@ In the navbar , you can access the encode page :
 1. Write the message you want to hide
 2. Choose the image you want. It will contains the hidden message *(it's preferable to choose a png image)*
 3. Change the output folder where the encoded image will be created 
-4. Click the button *Hide the message** , an image with the name *[original image name]-embedding.png* is now ready to be sent to someone else
+4. Click the button **Hide the message** , an image with the name *[original image name]-embedding.png* is now ready to be sent to someone else
 
 After sending the encoded image to another computer or maybe yours , you can decode it by accessing the encode page :
 
-**Note: the receiver must have the stegano-app **
+**Note: the receiver must have the stegano-app**
 
 ![decode page](readme_img/decode.PNG)
 
