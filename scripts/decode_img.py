@@ -1,6 +1,13 @@
+
+#############################################################
+# this is a personal implementation of the decoding process #
+#############################################################
+
+
 import cv2
 import numpy as np
 import random
+
 def decode_img(img): #reshaping the image and checking the rgb values of each pixel ,even means 1, odd means 0
     img=cv2.imread(img)
     M=np.array(img).flatten().tolist()
