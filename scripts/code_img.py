@@ -1,7 +1,8 @@
 
 ###########################################################
-# this is a personal implementation of the coding process #
+# this is a personal implementation of the coding process#
 ###########################################################
+
 
 import cv2 #for image processing
 
