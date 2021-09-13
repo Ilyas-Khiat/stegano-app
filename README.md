@@ -50,7 +50,7 @@ find the the sent image in your computer, and you're done .
 
 **Magic**
 
-##Back-end
+## Back-end
 
 If you checked the source_code , you will find in the scripts folder Two files :
 
@@ -59,13 +59,13 @@ If you checked the source_code , you will find in the scripts folder Two files :
 
 I guess it's well explained
 
-##Front-end
+## Front-end
 
 check the [app.py](https://github.com/Ilyas-Khiat/stegano-app/blob/main/scripts/app.py) file
 
 Contact me here : *kiatdotblend@gmail.com*
 
-###HAVE FUN :) 
+### HAVE FUN :) 
 Hope it works
 
 
